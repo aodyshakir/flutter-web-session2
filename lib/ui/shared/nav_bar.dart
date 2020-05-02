@@ -1,6 +1,7 @@
 import 'package:demo2app/ui/pages/about_page/about_page.dart';
 import 'package:demo2app/ui/pages/home_page/home_page.dart';
 import 'package:demo2app/ui/pages/learn_page/learn_page.dart';
+import 'package:demo2app/ui/pages/support_page/support_page.dart';
 import 'package:flutter/material.dart';
 
 class NavBarWidget extends StatelessWidget {
@@ -44,7 +45,12 @@ class NavBarWidget extends StatelessWidget {
                           .pushReplacementNamed(LearnPage.routeName);
                     },
                     child: Text('Learn')),
-                FlatButton(onPressed: () {}, child: Text('Support')),
+                FlatButton(
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushReplacementNamed(SupportPage.routeName);
+                    },
+                    child: Text('Support')),
               ],
             ),
           )
