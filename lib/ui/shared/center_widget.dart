@@ -8,7 +8,7 @@ class CenterdedWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 80, vertical: 60),
-      decoration: BoxDecoration(color: Colors.grey[400]),
+      decoration: BoxDecoration(color: Colors.grey[200]),
       child: ConstrainedBox(
           constraints: BoxConstraints(maxWidth: 1200, minWidth: 900),
           child: child),
