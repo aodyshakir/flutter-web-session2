@@ -13,7 +13,11 @@ class AboutPage extends StatelessWidget {
             NavBarWidget(),
             CenterdedWidget(
               child: Container(
-                child: Text('About'),
+                padding: const EdgeInsets.all(32),
+                child: Text(
+                  'About',
+                  softWrap: true,
+                ),
               ),
             ),
           ],

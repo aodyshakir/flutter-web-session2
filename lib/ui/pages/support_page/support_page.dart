@@ -14,7 +14,7 @@ class SupportPage extends StatelessWidget {
           children: <Widget>[
             NavBarWidget(),
             CenterdedWidget(
-              child:Text('support'),
+              child:Text('support',),
             ),
           ],
         ),
